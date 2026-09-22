@@ -1,0 +1,477 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectId": "prj_demo",
+  "screenId": "dashboard",
+  "name": "프로젝트 대시보드",
+  "revision": 1,
+  "target": "web-react",
+  "coordinateSpace": {
+    "unit": "css-px",
+    "origin": "top-left"
+  },
+  "rootNodeId": "root",
+  "defaultPolicy": {
+    "layout": "hard",
+    "topology": "hard",
+    "presentation": "free",
+    "content": "hard"
+  },
+  "breakpoints": [
+    {
+      "id": "compact",
+      "minWidth": 0,
+      "maxWidthExclusive": 768
+    },
+    {
+      "id": "desktop",
+      "minWidth": 768,
+      "maxWidthExclusive": null
+    }
+  ],
+  "designSystem": {
+    "id": "ds_demo",
+    "revision": 1,
+    "tokens": {
+      "color.background": {
+        "type": "color",
+        "value": "#111318"
+      },
+      "color.text": {
+        "type": "color",
+        "value": "#F1F4FA"
+      },
+      "spacing.page": {
+        "type": "dimension",
+        "value": 24
+      },
+      "spacing.section": {
+        "type": "dimension",
+        "value": 16
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "parentId": null,
+      "order": 0,
+      "name": "root",
+      "role": "container",
+      "layout": {
+        "mode": "column",
+        "width": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "height": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "gap": 0,
+        "align": "stretch",
+        "justify": "start"
+      },
+      "placement": {
+        "kind": "flow"
+      },
+      "visible": true,
+      "content": {},
+      "slot": {
+        "ownership": "managed",
+        "componentKey": null,
+        "sourcePath": null,
+        "exportName": null
+      },
+      "locks": [],
+      "responsive": []
+    },
+    {
+      "id": "header",
+      "parentId": "root",
+      "order": 0,
+      "name": "header",
+      "role": "navigation",
+      "layout": {
+        "mode": "leaf",
+        "width": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "height": {
+          "mode": "fixed",
+          "value": 64
+        },
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "gap": 0,
+        "align": "stretch",
+        "justify": "start"
+      },
+      "placement": {
+        "kind": "flow"
+      },
+      "visible": true,
+      "content": {},
+      "slot": {
+        "ownership": "managed",
+        "componentKey": "HeaderContent",
+        "sourcePath": "src/boxspec/slots/HeaderContent.tsx",
+        "exportName": "HeaderContent"
+      },
+      "locks": [],
+      "responsive": []
+    },
+    {
+      "id": "body",
+      "parentId": "root",
+      "order": 1,
+      "name": "body",
+      "role": "container",
+      "layout": {
+        "mode": "row",
+        "width": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "height": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "gap": 0,
+        "align": "stretch",
+        "justify": "start"
+      },
+      "placement": {
+        "kind": "flow"
+      },
+      "visible": true,
+      "content": {},
+      "slot": {
+        "ownership": "managed",
+        "componentKey": null,
+        "sourcePath": null,
+        "exportName": null
+      },
+      "locks": [],
+      "responsive": []
+    },
+    {
+      "id": "sidebar",
+      "parentId": "body",
+      "order": 0,
+      "name": "sidebar",
+      "role": "navigation",
+      "layout": {
+        "mode": "leaf",
+        "width": {
+          "mode": "fixed",
+          "value": 260
+        },
+        "height": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "gap": 0,
+        "align": "stretch",
+        "justify": "start"
+      },
+      "placement": {
+        "kind": "flow"
+      },
+      "visible": true,
+      "content": {},
+      "slot": {
+        "ownership": "managed",
+        "componentKey": "SidebarContent",
+        "sourcePath": "src/boxspec/slots/SidebarContent.tsx",
+        "exportName": "SidebarContent"
+      },
+      "locks": [
+        {
+          "path": "/layout/width",
+          "policy": "hard"
+        }
+      ],
+      "responsive": [
+        {
+          "breakpointId": "compact",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "parentId": "body",
+      "order": 1,
+      "name": "main",
+      "role": "content",
+      "layout": {
+        "mode": "column",
+        "width": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "height": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "padding": {
+          "top": 24,
+          "right": 24,
+          "bottom": 24,
+          "left": 24
+        },
+        "gap": 16,
+        "align": "stretch",
+        "justify": "start"
+      },
+      "placement": {
+        "kind": "flow"
+      },
+      "visible": true,
+      "content": {},
+      "slot": {
+        "ownership": "managed",
+        "componentKey": null,
+        "sourcePath": null,
+        "exportName": null
+      },
+      "locks": [],
+      "responsive": []
+    },
+    {
+      "id": "search",
+      "parentId": "main",
+      "order": 0,
+      "name": "search",
+      "role": "input",
+      "layout": {
+        "mode": "leaf",
+        "width": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "height": {
+          "mode": "fixed",
+          "value": 48
+        },
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "gap": 0,
+        "align": "stretch",
+        "justify": "start"
+      },
+      "placement": {
+        "kind": "flow"
+      },
+      "visible": true,
+      "content": {},
+      "slot": {
+        "ownership": "managed",
+        "componentKey": "ProjectSearch",
+        "sourcePath": "src/boxspec/slots/ProjectSearch.tsx",
+        "exportName": "ProjectSearch"
+      },
+      "locks": [],
+      "responsive": []
+    },
+    {
+      "id": "projects",
+      "parentId": "main",
+      "order": 1,
+      "name": "projects",
+      "role": "list",
+      "layout": {
+        "mode": "leaf",
+        "width": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "height": {
+          "mode": "fill",
+          "weight": 1,
+          "min": 0
+        },
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "gap": 0,
+        "align": "stretch",
+        "justify": "start"
+      },
+      "placement": {
+        "kind": "flow"
+      },
+      "visible": true,
+      "content": {},
+      "slot": {
+        "ownership": "managed",
+        "componentKey": "ProjectList",
+        "sourcePath": "src/boxspec/slots/ProjectList.tsx",
+        "exportName": "ProjectList"
+      },
+      "locks": [],
+      "responsive": []
+    }
+  ],
+  "assertions": [
+    {
+      "id": "header-height",
+      "kind": "numeric",
+      "nodeId": "header",
+      "metric": "height",
+      "operator": "eq",
+      "expected": 64,
+      "tolerance": 1
+    },
+    {
+      "id": "sidebar-width",
+      "kind": "numeric",
+      "nodeId": "sidebar",
+      "metric": "width",
+      "operator": "eq",
+      "expected": 260,
+      "tolerance": 1,
+      "when": {
+        "breakpointIds": [
+          "desktop"
+        ]
+      }
+    },
+    {
+      "id": "sidebar-hidden-compact",
+      "kind": "visibility",
+      "nodeId": "sidebar",
+      "expected": false,
+      "when": {
+        "breakpointIds": [
+          "compact"
+        ]
+      }
+    },
+    {
+      "id": "sidebar-visible-desktop",
+      "kind": "visibility",
+      "nodeId": "sidebar",
+      "expected": true,
+      "when": {
+        "breakpointIds": [
+          "desktop"
+        ]
+      }
+    },
+    {
+      "id": "main-next-sidebar",
+      "kind": "relation",
+      "nodeId": "main",
+      "otherNodeId": "sidebar",
+      "relation": "right-of",
+      "gap": 0,
+      "tolerance": 1,
+      "when": {
+        "breakpointIds": [
+          "desktop"
+        ]
+      }
+    },
+    {
+      "id": "main-left-compact",
+      "kind": "numeric",
+      "nodeId": "main",
+      "metric": "left",
+      "operator": "eq",
+      "expected": 0,
+      "tolerance": 1,
+      "when": {
+        "breakpointIds": [
+          "compact"
+        ]
+      }
+    },
+    {
+      "id": "main-visible",
+      "kind": "visibility",
+      "nodeId": "main",
+      "expected": true
+    },
+    {
+      "id": "search-no-x-overflow",
+      "kind": "overflow",
+      "nodeId": "search",
+      "axis": "x",
+      "allowed": "none"
+    }
+  ],
+  "verification": {
+    "viewports": [
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      {
+        "id": "compact",
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2
+      }
+    ],
+    "fixtureIds": [
+      "populated",
+      "empty",
+      "loading",
+      "error",
+      "long-text"
+    ],
+    "requiredChecks": [
+      "schema",
+      "policy",
+      "layout",
+      "types",
+      "build",
+      "interactions"
+    ],
+    "logicalTolerance": 1,
+    "boundaryTests": true
+  }
+}

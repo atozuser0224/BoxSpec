@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "boxspec": {
+      "type": "local",
+      "command": [
+        "node",
+        "C:/DEV/BoxSpec/apps/mcp/dist/index.js",
+        "--profile",
+        "default"
+      ],
+      "enabled": true
+    }
+  }
+}

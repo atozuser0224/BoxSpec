@@ -1,0 +1,10 @@
+{
+  "state": "long-text",
+  "items": [
+    {
+      "id": "project-long",
+      "name": "아주 긴 한국어 프로젝트 이름의 줄바꿈과 검색 입력 크기를 확인하는 테스트 프로젝트"
+    }
+  ],
+  "error": null
+}

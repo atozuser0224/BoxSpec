@@ -1,0 +1,10 @@
+{
+  "state": "populated",
+  "items": [
+    {
+      "id": "project-a",
+      "name": "첫 번째 프로젝트"
+    }
+  ],
+  "error": null
+}

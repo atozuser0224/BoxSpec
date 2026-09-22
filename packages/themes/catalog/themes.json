@@ -1,0 +1,1772 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-22T06:56:24.567Z",
+  "themes": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "atlassian-teamwork",
+      "name": "Atlassian Teamwork",
+      "summary": "A clear collaboration workspace with familiar enterprise blue and strong information hierarchy.",
+      "category": "collaboration",
+      "styleTags": [
+        "enterprise",
+        "dashboard",
+        "collaboration",
+        "light"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Official design system",
+        "title": "Atlassian Design",
+        "url": "https://atlassian.design/",
+        "originalUrl": "https://atlassian.design/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://atlassian.design/assets/dab2e15ce8c4/static/0b4e62efc0d2c7d917e11f3860855c05/meta.png",
+        "licenseNote": "Official reference documentation terms apply. This is an original reduced BoxSpec token interpretation; no components, source code, fonts, or brand assets are copied."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/atlassian-teamwork.svg",
+        "alt": "BoxSpec-generated token study for Atlassian Teamwork; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F7F8F9"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#172B4D"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#0C66E4"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#B6C2CF"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 8
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F7F8F9",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#172B4D",
+          "role": "text"
+        },
+        {
+          "hex": "#0C66E4",
+          "role": "accent"
+        },
+        {
+          "hex": "#B6C2CF",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "comfortable",
+        "radius": "moderately rounded",
+        "shadow": "layered cards",
+        "motion": "brief easing",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "bausola-visible-grid",
+      "name": "Bausola Visible Grid",
+      "summary": "A high-contrast product showcase with an exposed grid and sharp industrial geometry.",
+      "category": "product showcase",
+      "styleTags": [
+        "dark",
+        "industrial",
+        "visible-grid",
+        "product"
+      ],
+      "mode": "dark",
+      "source": {
+        "collection": "One Page Love",
+        "title": "Bausola Banch",
+        "url": "https://onepagelove.com/bausola-banch",
+        "originalUrl": "https://banch.bausola.com/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=628,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2025/08/opl-master-24.jpg",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/bausola-visible-grid.svg",
+        "alt": "BoxSpec-generated token study for Bausola Visible Grid; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#11110F"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#1B1A17"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#F4F0E8"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#C8FF45"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#4A4941"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 0
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#11110F",
+          "role": "background"
+        },
+        {
+          "hex": "#1B1A17",
+          "role": "surface"
+        },
+        {
+          "hex": "#F4F0E8",
+          "role": "text"
+        },
+        {
+          "hex": "#C8FF45",
+          "role": "accent"
+        },
+        {
+          "hex": "#4A4941",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "spacious",
+        "radius": "square",
+        "shadow": "flat grid",
+        "motion": "scroll-led",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "carbon-productive",
+      "name": "Carbon Productive",
+      "summary": "A dense, disciplined workspace for data-heavy enterprise tools.",
+      "category": "data workspace",
+      "styleTags": [
+        "enterprise",
+        "data",
+        "productive",
+        "light"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Official design system",
+        "title": "Carbon Design System",
+        "url": "https://carbondesignsystem.com/",
+        "originalUrl": "https://carbondesignsystem.com/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://carbondesignsystem.com/ogimage.png",
+        "licenseNote": "Official reference documentation terms apply. This is an original reduced BoxSpec token interpretation; no components, source code, fonts, or brand assets are copied."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/carbon-productive.svg",
+        "alt": "BoxSpec-generated token study for Carbon Productive; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F4F4F4"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#161616"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#0F62FE"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#C6C6C6"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 0
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F4F4F4",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#161616",
+          "role": "text"
+        },
+        {
+          "hex": "#0F62FE",
+          "role": "accent"
+        },
+        {
+          "hex": "#C6C6C6",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "compact",
+        "radius": "square",
+        "shadow": "flat panels",
+        "motion": "direct",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "darusim-beige-pixel",
+      "name": "Daru Beige Pixel",
+      "summary": "A warm portfolio study with restrained pixel accents and tactile editorial color.",
+      "category": "portfolio",
+      "styleTags": [
+        "beige",
+        "pixel",
+        "minimal",
+        "playful"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "One Page Love",
+        "title": "Daru Sim",
+        "url": "https://onepagelove.com/darusim",
+        "originalUrl": "https://darusim.com/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=628,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/05/opl-screenshot-daru-sim-1777952977526-desktop.jpg",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/darusim-beige-pixel.svg",
+        "alt": "BoxSpec-generated token study for Daru Beige Pixel; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F1E7D6"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFF8EC"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#25231F"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#D85D3A"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#3F3B34"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 4
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F1E7D6",
+          "role": "background"
+        },
+        {
+          "hex": "#FFF8EC",
+          "role": "surface"
+        },
+        {
+          "hex": "#25231F",
+          "role": "text"
+        },
+        {
+          "hex": "#D85D3A",
+          "role": "accent"
+        },
+        {
+          "hex": "#3F3B34",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "comfortable",
+        "radius": "subtle",
+        "shadow": "outlined cards",
+        "motion": "playful reveal",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "decimals-pastel-editorial",
+      "name": "Decimals Pastel Editorial",
+      "summary": "A soft hiring marketplace direction combining pastel surfaces with an editorial display voice.",
+      "category": "marketplace",
+      "styleTags": [
+        "pastel",
+        "editorial",
+        "serif",
+        "saas"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Land-book",
+        "title": "Decimals",
+        "url": "https://land-book.com/websites/98068-decimals-hire-vetted-designers",
+        "originalUrl": "https://www.decimals.co/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://www.decimals.co/opengraph-image.png?opengraph-image.0l8u85~nf07mw.png?dpl=dpl_A6uDFMdb5t8AKF94skcgCw9V5fAF",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/decimals-pastel-editorial.svg",
+        "alt": "BoxSpec-generated token study for Decimals Pastel Editorial; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F9F4FF"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#28223A"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#8D63FF"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#D8C9F3"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 18
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F9F4FF",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#28223A",
+          "role": "text"
+        },
+        {
+          "hex": "#8D63FF",
+          "role": "accent"
+        },
+        {
+          "hex": "#D8C9F3",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "Editorial serif contrast",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "comfortable",
+        "radius": "generously rounded",
+        "shadow": "soft cards",
+        "motion": "gentle",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "fluent-calm-productivity",
+      "name": "Fluent Calm Productivity",
+      "summary": "A calm, polished productivity shell shaped for cross-platform work.",
+      "category": "productivity",
+      "styleTags": [
+        "enterprise",
+        "calm",
+        "productivity",
+        "light"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Official design system",
+        "title": "Fluent 2 Design System",
+        "url": "https://fluent2.microsoft.design/",
+        "originalUrl": "https://fluent2.microsoft.design/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://fluent2websitecdn.azureedge.net/cdn/fluent-logo-metadata.Cwa-_8F7.png",
+        "licenseNote": "Official reference documentation terms apply. This is an original reduced BoxSpec token interpretation; no components, source code, fonts, or brand assets are copied."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/fluent-calm-productivity.svg",
+        "alt": "BoxSpec-generated token study for Fluent Calm Productivity; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F5F5F5"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#242424"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#0F6CBD"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#D1D1D1"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "'Segoe UI', system-ui, sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "'Segoe UI', system-ui, sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 8
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F5F5F5",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#242424",
+          "role": "text"
+        },
+        {
+          "hex": "#0F6CBD",
+          "role": "accent"
+        },
+        {
+          "hex": "#D1D1D1",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "comfortable",
+        "radius": "moderately rounded",
+        "shadow": "subtle elevation",
+        "motion": "fluid",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "govuk-service-clarity",
+      "name": "GOV.UK Service Clarity",
+      "summary": "A direct, accessible service interface for forms, guidance, and high-trust tasks.",
+      "category": "public service",
+      "styleTags": [
+        "accessible",
+        "forms",
+        "public-service",
+        "light"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Official design system",
+        "title": "GOV.UK Design System",
+        "url": "https://design-system.service.gov.uk/",
+        "originalUrl": "https://design-system.service.gov.uk/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png",
+        "licenseNote": "Official reference documentation terms apply. This is an original reduced BoxSpec token interpretation; no components, source code, fonts, or brand assets are copied."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/govuk-service-clarity.svg",
+        "alt": "BoxSpec-generated token study for GOV.UK Service Clarity; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F3F2F1"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#0B0C0C"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#1D70B8"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#B1B4B6"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "Arial, system-ui, sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "Arial, system-ui, sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 0
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F3F2F1",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#0B0C0C",
+          "role": "text"
+        },
+        {
+          "hex": "#1D70B8",
+          "role": "accent"
+        },
+        {
+          "hex": "#B1B4B6",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "compact",
+        "radius": "square",
+        "shadow": "flat sections",
+        "motion": "minimal",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "gusto-warm-people",
+      "name": "Gusto Warm People",
+      "summary": "A friendly business-product direction with warm neutrals, red accents, and generous curves.",
+      "category": "people operations",
+      "styleTags": [
+        "warm",
+        "friendly",
+        "business",
+        "saas"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Lapa Ninja",
+        "title": "Gusto",
+        "url": "https://www.lapa.ninja/post/gusto-5/",
+        "originalUrl": "https://gusto.com/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/gusto-warm-people.svg",
+        "alt": "BoxSpec-generated token study for Gusto Warm People; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#FBF7F2"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#2F2A27"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#F45D48"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#E5D8CD"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 16
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#FBF7F2",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#2F2A27",
+          "role": "text"
+        },
+        {
+          "hex": "#F45D48",
+          "role": "accent"
+        },
+        {
+          "hex": "#E5D8CD",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "comfortable",
+        "radius": "generously rounded",
+        "shadow": "soft cards",
+        "motion": "friendly",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "mainframe-dark-bento",
+      "name": "Mainframe Dark Bento",
+      "summary": "A compact dark SaaS presentation with luminous accents and modular bento panels.",
+      "category": "saas",
+      "styleTags": [
+        "dark",
+        "bento",
+        "minimal",
+        "saas"
+      ],
+      "mode": "dark",
+      "source": {
+        "collection": "One Page Love",
+        "title": "Mainframe",
+        "url": "https://onepagelove.com/mainframe",
+        "originalUrl": "https://mainframe.app/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=628,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/05/opl-screenshot-mainframe-1779887960605-desktop.jpg",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/mainframe-dark-bento.svg",
+        "alt": "BoxSpec-generated token study for Mainframe Dark Bento; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#0B0D10"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#12151A"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#F6F7F9"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#8DE9FF"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#2C323B"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 12
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#0B0D10",
+          "role": "background"
+        },
+        {
+          "hex": "#12151A",
+          "role": "surface"
+        },
+        {
+          "hex": "#F6F7F9",
+          "role": "text"
+        },
+        {
+          "hex": "#8DE9FF",
+          "role": "accent"
+        },
+        {
+          "hex": "#2C323B",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "compact",
+        "radius": "moderately rounded",
+        "shadow": "dark elevation",
+        "motion": "recap reveal",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "material-expressive",
+      "name": "Material Expressive",
+      "summary": "A rounded, high-energy consumer interface with clear tonal surfaces.",
+      "category": "consumer app",
+      "styleTags": [
+        "expressive",
+        "rounded",
+        "consumer",
+        "light"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Official design system",
+        "title": "Material Design 3",
+        "url": "https://m3.material.io/",
+        "originalUrl": "https://m3.material.io/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://m3.material.io/static/assets/m3-social.jpg",
+        "licenseNote": "Official reference documentation terms apply. This is an original reduced BoxSpec token interpretation; no components, source code, fonts, or brand assets are copied."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/material-expressive.svg",
+        "alt": "BoxSpec-generated token study for Material Expressive; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#FFFBFE"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#F3EDF7"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#1D1B20"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#6750A4"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#CAC4D0"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 16
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#FFFBFE",
+          "role": "background"
+        },
+        {
+          "hex": "#F3EDF7",
+          "role": "surface"
+        },
+        {
+          "hex": "#1D1B20",
+          "role": "text"
+        },
+        {
+          "hex": "#6750A4",
+          "role": "accent"
+        },
+        {
+          "hex": "#CAC4D0",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "comfortable",
+        "radius": "generously rounded",
+        "shadow": "tonal elevation",
+        "motion": "expressive",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "notanotherbill-photo-shop",
+      "name": "Not Another Bill Photo Shop",
+      "summary": "A photo-first commerce study using editorial whitespace and a restrained blue accent.",
+      "category": "commerce",
+      "styleTags": [
+        "ecommerce",
+        "photography",
+        "editorial",
+        "minimal"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Awwwards",
+        "title": "Not Another Bill",
+        "url": "https://www.awwwards.com/sites/not-another-bill",
+        "originalUrl": "https://www.notanotherbill.com/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://assets.awwwards.com/awards/submissions/2018/05/5afc092eb09e8.jpg",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/notanotherbill-photo-shop.svg",
+        "alt": "BoxSpec-generated token study for Not Another Bill Photo Shop; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F6F7F8"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#1B1B1B"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#2779A7"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#9C9C9C"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 2
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F6F7F8",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#1B1B1B",
+          "role": "text"
+        },
+        {
+          "hex": "#2779A7",
+          "role": "accent"
+        },
+        {
+          "hex": "#9C9C9C",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "spacious",
+        "radius": "subtle",
+        "shadow": "flat imagery",
+        "motion": "gallery fade",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "polaris-merchant-utility",
+      "name": "Polaris Merchant Utility",
+      "summary": "A practical merchant admin surface with compact controls and clear action emphasis.",
+      "category": "commerce admin",
+      "styleTags": [
+        "commerce",
+        "admin",
+        "utility",
+        "light"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Official design system",
+        "title": "Polaris References",
+        "url": "https://shopify.dev/docs/api/polaris",
+        "originalUrl": "https://shopify.dev/docs/api/polaris",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://shopify.dev/images/social-share-24de3afa0326f705b84a0a98714acc192611e5a21ade3b7c8f2bd12ba7d1457f.jpg",
+        "licenseNote": "Official reference documentation terms apply. This is an original reduced BoxSpec token interpretation; no components, source code, fonts, or brand assets are copied."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/polaris-merchant-utility.svg",
+        "alt": "BoxSpec-generated token study for Polaris Merchant Utility; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F7F7F7"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#303030"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#005BD3"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#E3E3E3"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 8
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F7F7F7",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#303030",
+          "role": "text"
+        },
+        {
+          "hex": "#005BD3",
+          "role": "accent"
+        },
+        {
+          "hex": "#E3E3E3",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "compact",
+        "radius": "moderately rounded",
+        "shadow": "subtle cards",
+        "motion": "direct",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "primer-developer-workbench",
+      "name": "Primer Developer Workbench",
+      "summary": "A developer-focused workspace with crisp borders, dense tables, and familiar link blue.",
+      "category": "developer tools",
+      "styleTags": [
+        "developer",
+        "workbench",
+        "data",
+        "light"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Official design system",
+        "title": "Primer",
+        "url": "https://primer.style/",
+        "originalUrl": "https://primer.style/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "licenseNote": "Official reference documentation terms apply. This is an original reduced BoxSpec token interpretation; no components, source code, fonts, or brand assets are copied."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/primer-developer-workbench.svg",
+        "alt": "BoxSpec-generated token study for Primer Developer Workbench; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F6F8FA"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#1F2328"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#0969DA"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#D0D7DE"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 6
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F6F8FA",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#1F2328",
+          "role": "text"
+        },
+        {
+          "hex": "#0969DA",
+          "role": "accent"
+        },
+        {
+          "hex": "#D0D7DE",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "compact",
+        "radius": "subtle",
+        "shadow": "bordered panels",
+        "motion": "brief",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "selfaware-playful-brutal",
+      "name": "Self Aware Playful Brutal",
+      "summary": "A bold studio portfolio direction with cream canvas, black rules, and playful scale shifts.",
+      "category": "studio portfolio",
+      "styleTags": [
+        "brutalist",
+        "playful",
+        "studio",
+        "high-contrast"
+      ],
+      "mode": "mixed",
+      "source": {
+        "collection": "Awwwards",
+        "title": "Self Aware",
+        "url": "https://www.awwwards.com/sites/self-aware",
+        "originalUrl": "https://selfaware.studio/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://assets.awwwards.com/awards/submissions/2023/04/64416dfbdcb51301986040.png",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/selfaware-playful-brutal.svg",
+        "alt": "BoxSpec-generated token study for Self Aware Playful Brutal; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#FAF6EB"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFDF7"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#000000"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#000000"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#000000"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 0
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#FAF6EB",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFDF7",
+          "role": "surface"
+        },
+        {
+          "hex": "#000000",
+          "role": "text"
+        },
+        {
+          "hex": "#000000",
+          "role": "accent"
+        },
+        {
+          "hex": "#000000",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "spacious",
+        "radius": "square",
+        "shadow": "hard outlines",
+        "motion": "microinteraction-led",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "spectrum-creative-neutral",
+      "name": "Spectrum Creative Neutral",
+      "summary": "A neutral creative-tool surface designed to keep content and controls legible.",
+      "category": "creative tools",
+      "styleTags": [
+        "creative",
+        "neutral",
+        "professional",
+        "light"
+      ],
+      "mode": "light",
+      "source": {
+        "collection": "Official design system",
+        "title": "Adobe Spectrum",
+        "url": "https://spectrum.adobe.com/",
+        "originalUrl": "https://spectrum.adobe.com/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://spectrum.adobe.com/static/landscape.png",
+        "licenseNote": "Official reference documentation terms apply. This is an original reduced BoxSpec token interpretation; no components, source code, fonts, or brand assets are copied."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/spectrum-creative-neutral.svg",
+        "alt": "BoxSpec-generated token study for Spectrum Creative Neutral; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#F8F8F8"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#2C2C2C"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#1473E6"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#D5D5D5"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 6
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#F8F8F8",
+          "role": "background"
+        },
+        {
+          "hex": "#FFFFFF",
+          "role": "surface"
+        },
+        {
+          "hex": "#2C2C2C",
+          "role": "text"
+        },
+        {
+          "hex": "#1473E6",
+          "role": "accent"
+        },
+        {
+          "hex": "#D5D5D5",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "compact",
+        "radius": "subtle",
+        "shadow": "subtle elevation",
+        "motion": "responsive",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "voidzero-mono-spectrum",
+      "name": "VoidZero Mono Spectrum",
+      "summary": "A developer-tool direction with near-black surfaces, monospaced rhythm, and a hot orange signal.",
+      "category": "developer tools",
+      "styleTags": [
+        "developer",
+        "monospace",
+        "dark",
+        "spectrum"
+      ],
+      "mode": "mixed",
+      "source": {
+        "collection": "Lapa Ninja",
+        "title": "void(0)",
+        "url": "https://www.lapa.ninja/post/voidzero/",
+        "originalUrl": "https://voidzero.dev/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://voidzero.dev/og.jpg",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/voidzero-mono-spectrum.svg",
+        "alt": "BoxSpec-generated token study for VoidZero Mono Spectrum; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#060606"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#111111"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#F4F4F4"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#FF5D01"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#343434"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "ui-monospace, 'Cascadia Code', Consolas, monospace"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "ui-monospace, 'Cascadia Code', Consolas, monospace"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 4
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#060606",
+          "role": "background"
+        },
+        {
+          "hex": "#111111",
+          "role": "surface"
+        },
+        {
+          "hex": "#F4F4F4",
+          "role": "text"
+        },
+        {
+          "hex": "#FF5D01",
+          "role": "accent"
+        },
+        {
+          "hex": "#343434",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "Monospaced technical display",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "compact",
+        "radius": "subtle",
+        "shadow": "outlined panels",
+        "motion": "fast",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "weave-data-intelligence",
+      "name": "Weave Data Intelligence",
+      "summary": "A dark data-intelligence dashboard with precise metrics and a luminous success accent.",
+      "category": "data dashboard",
+      "styleTags": [
+        "dark",
+        "data",
+        "ai",
+        "dashboard"
+      ],
+      "mode": "dark",
+      "source": {
+        "collection": "Land-book",
+        "title": "Weave",
+        "url": "https://land-book.com/websites/99993-weave-ai-to-measure-engineers-and-agents",
+        "originalUrl": "https://weaveos.com/",
+        "retrievedAt": "2026-09-22T06:56:24.567Z",
+        "previewUrl": "https://resources.weaveos.com/marketing/weave-social-preview.png",
+        "licenseNote": "Reference only. Source screenshots and brand assets remain copyright of their respective owners. This is an original BoxSpec token interpretation, not the source design system."
+      },
+      "preview": {
+        "kind": "local",
+        "path": "catalog/previews/weave-data-intelligence.svg",
+        "alt": "BoxSpec-generated token study for Weave Data Intelligence; not a source screenshot.",
+        "credit": "Original BoxSpec token study derived from public metadata; source linked separately."
+      },
+      "tokens": {
+        "color.background": {
+          "type": "color",
+          "value": "#0E1117"
+        },
+        "color.surface": {
+          "type": "color",
+          "value": "#161B22"
+        },
+        "color.text": {
+          "type": "color",
+          "value": "#F0F6FC"
+        },
+        "color.accent": {
+          "type": "color",
+          "value": "#7CFFB2"
+        },
+        "color.border": {
+          "type": "color",
+          "value": "#30363D"
+        },
+        "font.family.body": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "font.family.display": {
+          "type": "font-family",
+          "value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        },
+        "radius.medium": {
+          "type": "dimension",
+          "value": 10
+        },
+        "border.width": {
+          "type": "dimension",
+          "value": 1
+        }
+      },
+      "palette": [
+        {
+          "hex": "#0E1117",
+          "role": "background"
+        },
+        {
+          "hex": "#161B22",
+          "role": "surface"
+        },
+        {
+          "hex": "#F0F6FC",
+          "role": "text"
+        },
+        {
+          "hex": "#7CFFB2",
+          "role": "accent"
+        },
+        {
+          "hex": "#30363D",
+          "role": "border"
+        }
+      ],
+      "typography": {
+        "displayHint": "System-safe display hierarchy",
+        "bodyHint": "System-safe UI text; source font names are descriptive hints only"
+      },
+      "interpretation": {
+        "density": "compact",
+        "radius": "moderately rounded",
+        "shadow": "layered panels",
+        "motion": "metric reveal",
+        "notes": [
+          "Inspired by a public reference; this is not an exact copy, endorsement, or claim of source-system fidelity.",
+          "Palette and radius are BoxSpec-authored interpretations for a safe local token demo.",
+          "Spacing, layout, shadows, and motion remain descriptive and are not applied as design tokens."
+        ]
+      }
+    }
+  ]
+}

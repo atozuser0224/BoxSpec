@@ -1,0 +1,57 @@
+{
+  "name": "@boxspec/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "files": ["dist", "schemas"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./contracts": {
+      "types": "./dist/contracts.d.ts",
+      "default": "./dist/contracts.js"
+    },
+    "./domain": {
+      "types": "./dist/domain.d.ts",
+      "default": "./dist/domain.js"
+    },
+    "./errors": {
+      "types": "./dist/errors.d.ts",
+      "default": "./dist/errors.js"
+    },
+    "./hashing": {
+      "types": "./dist/hashing.d.ts",
+      "default": "./dist/hashing.js"
+    },
+    "./native-tools": {
+      "types": "./dist/native-tools.d.ts",
+      "default": "./dist/native-tools.js"
+    },
+    "./services": {
+      "types": "./dist/services.d.ts",
+      "default": "./dist/services.js"
+    },
+    "./runtime": {
+      "types": "./dist/runtime.d.ts",
+      "default": "./dist/runtime.js"
+    },
+    "./verification-tools": {
+      "types": "./dist/verification-tools.d.ts",
+      "default": "./dist/verification-tools.js"
+    },
+    "./schemas/integrity-binding.json": {
+      "default": "./schemas/integrity-binding.schema.json"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "pnpm run build && node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+/target/
+/dotnet/bin/
+/dotnet/obj/
+/bin-self-contained/
+/bin/*
+!/bin/boxspec-safe-fs.exe

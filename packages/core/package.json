@@ -1,0 +1,32 @@
+{
+  "name": "@boxspec/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./schema": "./src/schema/layout-contract.schema.json"
+  },
+  "files": ["dist", "src/schema/layout-contract.schema.json"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit --composite false",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@boxspec/shared": "workspace:*",
+    "ajv": "8.17.1",
+    "better-sqlite3": "13.0.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "24.10.1",
+    "typescript": "7.0.2",
+    "vitest": "5.0.1"
+  }
+}

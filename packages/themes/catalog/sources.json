@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {"id":"atlassian-teamwork","collection":"Official design system","sourceUrl":"https://atlassian.design/","originalUrl":"https://atlassian.design/"},
+    {"id":"bausola-visible-grid","collection":"One Page Love","sourceUrl":"https://onepagelove.com/bausola-banch","originalUrl":"https://banch.bausola.com/"},
+    {"id":"carbon-productive","collection":"Official design system","sourceUrl":"https://carbondesignsystem.com/","originalUrl":"https://carbondesignsystem.com/"},
+    {"id":"darusim-beige-pixel","collection":"One Page Love","sourceUrl":"https://onepagelove.com/darusim","originalUrl":"https://darusim.com/"},
+    {"id":"decimals-pastel-editorial","collection":"Land-book","sourceUrl":"https://land-book.com/websites/98068-decimals-hire-vetted-designers","originalUrl":"https://www.decimals.co/"},
+    {"id":"fluent-calm-productivity","collection":"Official design system","sourceUrl":"https://fluent2.microsoft.design/","originalUrl":"https://fluent2.microsoft.design/"},
+    {"id":"govuk-service-clarity","collection":"Official design system","sourceUrl":"https://design-system.service.gov.uk/","originalUrl":"https://design-system.service.gov.uk/"},
+    {"id":"gusto-warm-people","collection":"Lapa Ninja","sourceUrl":"https://www.lapa.ninja/post/gusto-5/","originalUrl":"https://gusto.com/"},
+    {"id":"mainframe-dark-bento","collection":"One Page Love","sourceUrl":"https://onepagelove.com/mainframe","originalUrl":"https://mainframe.app/"},
+    {"id":"material-expressive","collection":"Official design system","sourceUrl":"https://m3.material.io/","originalUrl":"https://m3.material.io/"},
+    {"id":"notanotherbill-photo-shop","collection":"Awwwards","sourceUrl":"https://www.awwwards.com/sites/not-another-bill","originalUrl":"https://www.notanotherbill.com/"},
+    {"id":"polaris-merchant-utility","collection":"Official design system","sourceUrl":"https://shopify.dev/docs/api/polaris","originalUrl":"https://shopify.dev/docs/api/polaris"},
+    {"id":"primer-developer-workbench","collection":"Official design system","sourceUrl":"https://primer.style/","originalUrl":"https://primer.style/"},
+    {"id":"selfaware-playful-brutal","collection":"Awwwards","sourceUrl":"https://www.awwwards.com/sites/self-aware","originalUrl":"https://selfaware.studio/"},
+    {"id":"spectrum-creative-neutral","collection":"Official design system","sourceUrl":"https://spectrum.adobe.com/","originalUrl":"https://spectrum.adobe.com/"},
+    {"id":"voidzero-mono-spectrum","collection":"Lapa Ninja","sourceUrl":"https://www.lapa.ninja/post/voidzero/","originalUrl":"https://voidzero.dev/"},
+    {"id":"weave-data-intelligence","collection":"Land-book","sourceUrl":"https://land-book.com/websites/99993-weave-ai-to-measure-engineers-and-agents","originalUrl":"https://weaveos.com/"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "boxspec": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "C:/DEV/BoxSpec/apps/mcp/dist/index.js",
+        "--profile",
+        "default"
+      ]
+    }
+  }
+}

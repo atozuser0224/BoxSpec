@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-22T06:09:25.385Z",
+  "overallStatus": "DEGRADED",
+  "redaction": {
+    "applied": true,
+    "policyVersion": "1.0.0",
+    "replacement": "[REDACTED]"
+  },
+  "installation": {
+    "status": "PASS",
+    "summary": "The doctor entry is running on selected Node 24.19.0.",
+    "data": {
+      "cliVersion": "0.1.0",
+      "nodeVersion": "v24.19.0",
+      "platform": "win32",
+      "architecture": "x64",
+      "installPath": "<home>\\Downloads\\BoxSpec_Production_Pack\\BoxSpec_Production_Pack\\apps\\cli"
+    }
+  },
+  "runtime": {
+    "status": "PASS",
+    "summary": "The BoxSpec runtime module and factory loaded.",
+    "data": {
+      "moduleResolved": true,
+      "factoryExported": true
+    }
+  },
+  "bridge": {
+    "status": "UNAVAILABLE",
+    "summary": "The bridge is reachable, but no valid pairing grant is active.",
+    "data": {
+      "commandConfigured": true,
+      "processStarted": true,
+      "handshakeSucceeded": true,
+      "toolsListed": true,
+      "capabilityCallSucceeded": false,
+      "protocolVersion": "2026-07-28",
+      "protocolEra": "modern",
+      "serverName": "boxspec",
+      "serverVersion": "0.1.0",
+      "toolCount": 15,
+      "capabilityErrorCode": "PAIRING_REQUIRED",
+      "diagnosticCode": "CAPABILITY_CALL_REJECTED"
+    }
+  },
+  "core": {
+    "status": "UNKNOWN",
+    "summary": "No successful capability call reached Core.",
+    "data": {
+      "actualMcpCall": false,
+      "errorCode": "PAIRING_REQUIRED"
+    }
+  },
+  "grants": {
+    "status": "UNAVAILABLE",
+    "summary": "A pairing grant is required.",
+    "data": {
+      "state": "required",
+      "observedThrough": "bridge-error"
+    }
+  },
+  "browser": {
+    "status": "PASS",
+    "summary": "The Playwright-managed Chromium executable launched successfully.",
+    "data": {
+      "packageVersion": "1.63.0",
+      "executablePresent": true,
+      "launchSucceeded": true,
+      "browserVersion": "153.0.8010.12"
+    }
+  },
+  "git": {
+    "status": "PASS",
+    "summary": "Git is available and the current directory is in a worktree.",
+    "data": {
+      "available": true,
+      "version": "git version 2.55.0.windows.3",
+      "currentDirectoryIsWorktree": true
+    }
+  },
+  "adapter": {
+    "status": "UNKNOWN",
+    "summary": "No verified web-react adapter capability was returned.",
+    "data": {
+      "target": "web-react",
+      "capabilities": []
+    }
+  },
+  "agents": {
+    "codex": {
+      "status": "PASS",
+      "summary": "Codex is available.",
+      "data": {
+        "executable": "<home>\\AppData\\Local\\OpenAI\\Codex\\bin\\247581e40ee272fb\\codex.EXE",
+        "available": true,
+        "version": "codex-cli 0.155.0-alpha.9.2"
+      }
+    },
+    "claude-code": {
+      "status": "UNAVAILABLE",
+      "summary": "Claude Code was not found on PATH.",
+      "data": {
+        "executable": "claude",
+        "available": false
+      }
+    },
+    "opencode": {
+      "status": "PASS",
+      "summary": "OpenCode is available.",
+      "data": {
+        "executable": "<home>\\AppData\\Roaming\\npm\\opencode.CMD",
+        "available": true,
+        "version": "1.18.32"
+      }
+    }
+  },
+  "clientConfiguration": {
+    "codex": {
+      "status": "UNKNOWN",
+      "summary": "No BoxSpec-owned configuration-write record was available.",
+      "data": {
+        "written": null,
+        "actualClientCall": "not-run"
+      }
+    },
+    "claude-code": {
+      "status": "UNKNOWN",
+      "summary": "No BoxSpec-owned configuration-write record was available.",
+      "data": {
+        "written": null,
+        "actualClientCall": "not-run"
+      }
+    },
+    "opencode": {
+      "status": "UNKNOWN",
+      "summary": "No BoxSpec-owned configuration-write record was available.",
+      "data": {
+        "written": null,
+        "actualClientCall": "not-run"
+      }
+    }
+  }
+}

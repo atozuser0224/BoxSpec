@@ -1,0 +1,11 @@
+{
+  "requestId": "demo-start-0001",
+  "projectId": "prj_demo",
+  "screenId": "dashboard",
+  "expectedRevision": 1,
+  "scopeNodeIds": [
+    "main"
+  ],
+  "objective": "기존 검색·데이터 연결을 보존하고 프로젝트 목록 슬롯을 구현한다. sidebar와 header는 변경하지 않는다.",
+  "executionProfileId": "approved-react-local"
+}

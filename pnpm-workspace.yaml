@@ -1,0 +1,15 @@
+packages:
+  - apps/*
+  - packages/*
+  - samples/*
+  - tests/*
+
+catalogMode: strict
+
+# pnpm 11 build-script policy. Keep this list minimal and review additions.
+allowBuilds:
+  # v13 ships a Node-API binary; its Windows gyp auto-hook is a known upstream bug.
+  # Runtime smoke tests must prove the bundled binary loads in Node and Electron.
+  better-sqlite3: false
+  electron: true
+  esbuild: true

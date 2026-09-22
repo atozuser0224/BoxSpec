@@ -1,0 +1,29 @@
+{
+  "name": "@boxspec/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "boxspec-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@boxspec/bridge": "workspace:*",
+    "@boxspec/local-ipc": "workspace:*",
+    "@boxspec/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@boxspec/change-manager": "workspace:*",
+    "@boxspec/runtime": "workspace:*",
+    "@modelcontextprotocol/client": "2.0.0",
+    "@types/node": "24.10.1",
+    "typescript": "7.0.2"
+  }
+}

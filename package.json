@@ -1,0 +1,29 @@
+{
+  "name": "boxspec",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Local-first visual layout contracts and verification for coding agents",
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install-electron.mjs",
+    "dev": "pnpm --filter @boxspec/desktop dev",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "test:unit": "pnpm -r --if-present test:unit",
+    "test:integration": "pnpm -r --if-present test:integration",
+    "test:e2e": "playwright test --config tests/e2e/playwright.config.ts",
+    "test:security": "pnpm build && pnpm --filter @boxspec/security-tests test:security && pnpm --filter @boxspec/change-manager test:security",
+    "doctor": "pnpm --filter @boxspec/cli run doctor",
+    "validate:spec": "python spec/tools/validate_spec.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.10.1",
+    "typescript": "7.0.2"
+  }
+}

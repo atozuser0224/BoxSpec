@@ -1,0 +1,37 @@
+{
+  "name": "@boxspec/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/main/main.cjs",
+  "scripts": {
+    "dev": "concurrently -k \"vite --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && cross-env BOXSPEC_RENDERER_URL=http://127.0.0.1:5173 electron .\"",
+    "build": "npm run build:renderer && npm run build:main",
+    "build:renderer": "vite build",
+    "build:main": "esbuild src/main/main.ts --bundle --platform=node --format=cjs --outfile=dist/main/main.cjs --external:electron --packages=external && esbuild src/preload/preload.ts --bundle --platform=node --format=cjs --outfile=dist/preload/preload.cjs --external:electron",
+    "typecheck": "tsc --noEmit",
+    "start": "electron .",
+    "package:win": "powershell -NoProfile -ExecutionPolicy Bypass -File ../../scripts/packaging/build-windows.ps1"
+  },
+  "dependencies": {
+    "@boxspec/local-ipc": "workspace:*",
+    "@boxspec/runtime": "workspace:*",
+    "@boxspec/shared": "workspace:*",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@electron/packager": "20.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "concurrently": "9.2.1",
+    "cross-env": "10.1.0",
+    "electron": "44.4.3",
+    "esbuild": "0.27.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.0",
+    "wait-on": "9.0.3"
+  }
+}

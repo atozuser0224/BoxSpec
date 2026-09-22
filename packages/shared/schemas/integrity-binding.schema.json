@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boxspec:integrity-binding:1.0.0",
+  "title": "BoxSpec internal approval integrity binding",
+  "type": "object",
+  "properties": {
+    "approvalId": { "$ref": "#/$defs/id" },
+    "candidate": { "$ref": "#/$defs/candidate" },
+    "verification": { "$ref": "#/$defs/verification" },
+    "approvedBy": {
+      "type": "object",
+      "properties": {
+        "kind": { "const": "desktop" },
+        "principalId": { "type": "string", "minLength": 1, "maxLength": 256 }
+      },
+      "required": ["kind", "principalId"],
+      "additionalProperties": false
+    },
+    "approvedAt": { "$ref": "#/$defs/timestamp" }
+  },
+  "required": ["approvalId", "candidate", "verification", "approvedBy", "approvedAt"],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,95}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "maxLength": 64
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096,
+      "pattern": "^(?![A-Za-z]:)(?![/\\\\])(?!.*(?:^|[/\\\\])\\.\\.(?:[/\\\\]|$))(?!.*:).+$"
+    },
+    "file": {
+      "type": "object",
+      "properties": {
+        "path": { "$ref": "#/$defs/relativePath" },
+        "kind": { "const": "file" },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "sizeBytes": { "type": "integer", "minimum": 0 },
+        "executable": { "type": "boolean" }
+      },
+      "required": ["path", "kind", "sha256", "sizeBytes", "executable"],
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": "object",
+      "properties": {
+        "projectId": { "$ref": "#/$defs/id" },
+        "taskId": { "$ref": "#/$defs/id" },
+        "candidateId": { "$ref": "#/$defs/id" },
+        "baseContractRevision": { "type": "integer", "minimum": 1 },
+        "treeHash": { "$ref": "#/$defs/sha256" },
+        "baseContractHash": { "$ref": "#/$defs/sha256" },
+        "effectiveContractHash": { "$ref": "#/$defs/sha256" },
+        "layoutOverridesHash": { "$ref": "#/$defs/sha256" },
+        "baseCommitHash": { "$ref": "#/$defs/sha256" },
+        "baseManifestHash": { "$ref": "#/$defs/sha256" },
+        "files": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/file" },
+          "maxItems": 100000
+        },
+        "changedPaths": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/relativePath" },
+          "maxItems": 10000
+        }
+      },
+      "required": [
+        "projectId",
+        "taskId",
+        "candidateId",
+        "baseContractRevision",
+        "treeHash",
+        "baseContractHash",
+        "effectiveContractHash",
+        "layoutOverridesHash",
+        "baseCommitHash",
+        "baseManifestHash",
+        "files",
+        "changedPaths"
+      ],
+      "additionalProperties": false
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "reportId": { "$ref": "#/$defs/id" },
+        "status": { "enum": ["PASS", "FAIL", "UNVERIFIED", "ERROR", "STALE"] },
+        "verificationProfileId": { "$ref": "#/$defs/id" },
+        "evidenceHash": { "$ref": "#/$defs/sha256" },
+        "verificationProfileHash": { "$ref": "#/$defs/sha256" },
+        "policyHash": { "$ref": "#/$defs/sha256" },
+        "policyRevision": { "type": "integer", "minimum": 1 },
+        "generatorVersion": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "dependencyLockHash": { "$ref": "#/$defs/sha256" },
+        "fixturesHash": { "$ref": "#/$defs/sha256" },
+        "checkedAt": { "$ref": "#/$defs/timestamp" }
+      },
+      "required": [
+        "reportId",
+        "status",
+        "verificationProfileId",
+        "evidenceHash",
+        "verificationProfileHash",
+        "policyHash",
+        "policyRevision",
+        "generatorVersion",
+        "dependencyLockHash",
+        "fixturesHash",
+        "checkedAt"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

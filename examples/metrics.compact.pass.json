@@ -1,0 +1,84 @@
+{
+  "origin": "hand-authored-spec-fixture-not-runtime-evidence",
+  "viewportId": "compact",
+  "fixtureId": "populated",
+  "nodes": {
+    "root": {
+      "left": 0,
+      "top": 0,
+      "right": 390,
+      "bottom": 844,
+      "width": 390,
+      "height": 844,
+      "visible": true,
+      "overflowX": false,
+      "overflowY": false
+    },
+    "header": {
+      "left": 0,
+      "top": 0,
+      "right": 390,
+      "bottom": 64,
+      "width": 390,
+      "height": 64,
+      "visible": true,
+      "overflowX": false,
+      "overflowY": false
+    },
+    "body": {
+      "left": 0,
+      "top": 64,
+      "right": 390,
+      "bottom": 844,
+      "width": 390,
+      "height": 780,
+      "visible": true,
+      "overflowX": false,
+      "overflowY": false
+    },
+    "sidebar": {
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "width": 0,
+      "height": 0,
+      "visible": false,
+      "overflowX": false,
+      "overflowY": false
+    },
+    "main": {
+      "left": 0,
+      "top": 64,
+      "right": 390,
+      "bottom": 844,
+      "width": 390,
+      "height": 780,
+      "visible": true,
+      "overflowX": false,
+      "overflowY": false
+    },
+    "search": {
+      "left": 24,
+      "top": 88,
+      "right": 366,
+      "bottom": 136,
+      "width": 342,
+      "height": 48,
+      "visible": true,
+      "overflowX": false,
+      "overflowY": false
+    },
+    "projects": {
+      "left": 24,
+      "top": 152,
+      "right": 366,
+      "bottom": 820,
+      "width": 342,
+      "height": 668,
+      "visible": true,
+      "overflowX": false,
+      "overflowY": false
+    }
+  }
+}

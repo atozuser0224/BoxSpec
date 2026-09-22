@@ -1,0 +1,13 @@
+{
+  "name": "@boxspec/e2e",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:e2e": "playwright test --config playwright.config.ts"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0",
+    "typescript": "7.0.2"
+  }
+}

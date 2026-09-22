@@ -1,0 +1,8 @@
+{
+  "projectId": "prj_demo",
+  "screenId": "dashboard",
+  "expectedRevision": 1,
+  "nodeIds": [
+    "main"
+  ]
+}

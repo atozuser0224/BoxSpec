@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.0.0",
+  "capturedAt": "2026-09-22T06:56:24.567Z",
+  "limits": {
+    "maxSources": 24,
+    "maxBytesPerResponse": 600000,
+    "timeoutMs": 12000,
+    "concurrency": 3
+  },
+  "snapshots": [
+    {
+      "id": "atlassian-teamwork",
+      "collection": "Official design system",
+      "source": {
+        "requestedUrl": "https://atlassian.design/",
+        "finalUrl": "https://atlassian.design/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html",
+        "durationMs": 258,
+        "bytesRead": 312426,
+        "truncated": false,
+        "title": "Atlassian Design",
+        "description": "Explore Atlassian Design to build beautiful experiences using our design system, and stay up to date with the latest news.",
+        "ogImage": "https://atlassian.design/assets/dab2e15ce8c4/static/0b4e62efc0d2c7d917e11f3860855c05/meta.png"
+      },
+      "original": {
+        "sameAsSource": true
+      }
+    },
+    {
+      "id": "bausola-visible-grid",
+      "collection": "One Page Love",
+      "source": {
+        "requestedUrl": "https://onepagelove.com/bausola-banch",
+        "finalUrl": "https://onepagelove.com/bausola-banch",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 1897,
+        "bytesRead": 85862,
+        "truncated": false,
+        "title": "Bausola Banch — One Page Website Award",
+        "description": "Immersive One Pager gauging interest for the Banch table by Bausola. The Landing Page (on the Bausola subdomain) features scroll-based table animations powered by GSAP ScrollTrigger.",
+        "ogImage": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=628,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2025/08/opl-master-24.jpg"
+      },
+      "original": {
+        "requestedUrl": "https://banch.bausola.com/",
+        "finalUrl": "https://banch.bausola.com/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 1209,
+        "bytesRead": 25828,
+        "truncated": false,
+        "title": "Banch | Smart Working Table – Bausola",
+        "description": "",
+        "ogImage": "/og-3.jpg"
+      }
+    },
+    {
+      "id": "carbon-productive",
+      "collection": "Official design system",
+      "source": {
+        "requestedUrl": "https://carbondesignsystem.com/",
+        "finalUrl": "https://carbondesignsystem.com/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 658,
+        "bytesRead": 600000,
+        "truncated": true,
+        "title": "Carbon Design System",
+        "description": "Carbon is IBM’s open source design system for products and digital experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.",
+        "ogImage": "/ogimage.png"
+      },
+      "original": {
+        "sameAsSource": true
+      }
+    },
+    {
+      "id": "darusim-beige-pixel",
+      "collection": "One Page Love",
+      "source": {
+        "requestedUrl": "https://onepagelove.com/darusim",
+        "finalUrl": "https://onepagelove.com/darusim",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 1374,
+        "bytesRead": 84071,
+        "truncated": false,
+        "title": "Daru Sim — One Page Website Award",
+        "description": "Long-scrolling One Page portfolio for product designer Daru Sim. What a cool made-mode idea switching out the hero workspace animation with a night scene.",
+        "ogImage": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=628,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/05/opl-screenshot-daru-sim-1777952977526-desktop.jpg"
+      },
+      "original": {
+        "requestedUrl": "https://darusim.com/",
+        "finalUrl": "https://darusim.com/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 1012,
+        "bytesRead": 63616,
+        "truncated": false,
+        "title": "Daru Sim / Portfolio",
+        "description": "Product designer who turns complex problems into simple interfaces that scale",
+        "ogImage": "https://darusim.com/og-image.png"
+      }
+    },
+    {
+      "id": "decimals-pastel-editorial",
+      "collection": "Land-book",
+      "source": {
+        "requestedUrl": "https://land-book.com/websites/98068-decimals-hire-vetted-designers",
+        "finalUrl": "https://land-book.com/websites/98068-decimals-hire-vetted-designers",
+        "status": 403,
+        "ok": false,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 272,
+        "bytesRead": 5752,
+        "truncated": false,
+        "title": "Just a moment...",
+        "description": "",
+        "ogImage": ""
+      },
+      "original": {
+        "requestedUrl": "https://www.decimals.co/",
+        "finalUrl": "https://www.decimals.co/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 457,
+        "bytesRead": 178166,
+        "truncated": false,
+        "title": "Decimals — Hire Vetted Designers",
+        "description": "Every candidate in your shortlist has been reviewed by a designer before it reaches you. Not recruiter-good. Designer-good.",
+        "ogImage": "https://www.decimals.co/opengraph-image.png?opengraph-image.0l8u85~nf07mw.png?dpl=dpl_A6uDFMdb5t8AKF94skcgCw9V5fAF"
+      }
+    },
+    {
+      "id": "fluent-calm-productivity",
+      "collection": "Official design system",
+      "source": {
+        "requestedUrl": "https://fluent2.microsoft.design/",
+        "finalUrl": "https://fluent2.microsoft.design/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html",
+        "durationMs": 1949,
+        "bytesRead": 113141,
+        "truncated": false,
+        "title": "Fluent 2 Design System",
+        "description": "Explore the next evolution of Microsoft’s design system, enabling more seamless collaboration and creativity than ever. Move fluidly from design to development, between apps, and across platforms.",
+        "ogImage": "https://fluent2websitecdn.azureedge.net/cdn/fluent-logo-metadata.Cwa-_8F7.png"
+      },
+      "original": {
+        "sameAsSource": true
+      }
+    },
+    {
+      "id": "govuk-service-clarity",
+      "collection": "Official design system",
+      "source": {
+        "requestedUrl": "https://design-system.service.gov.uk/",
+        "finalUrl": "https://design-system.service.gov.uk/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 813,
+        "bytesRead": 51834,
+        "truncated": false,
+        "title": "Home – GOV.UK Design System",
+        "description": "Design your service using GOV.UK styles, components and patterns",
+        "ogImage": "https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png"
+      },
+      "original": {
+        "sameAsSource": true
+      }
+    },
+    {
+      "id": "gusto-warm-people",
+      "collection": "Lapa Ninja",
+      "source": {
+        "requestedUrl": "https://www.lapa.ninja/post/gusto-5/",
+        "finalUrl": "https://www.lapa.ninja/post/gusto-5/",
+        "status": 403,
+        "ok": false,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 256,
+        "bytesRead": 5846,
+        "truncated": false,
+        "title": "Attention Required! | Cloudflare",
+        "description": "",
+        "ogImage": ""
+      },
+      "original": {
+        "requestedUrl": "https://gusto.com/",
+        "finalUrl": "https://gusto.com/",
+        "status": 403,
+        "ok": false,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 148,
+        "bytesRead": 5656,
+        "truncated": false,
+        "title": "Just a moment...",
+        "description": "",
+        "ogImage": ""
+      }
+    },
+    {
+      "id": "mainframe-dark-bento",
+      "collection": "One Page Love",
+      "source": {
+        "requestedUrl": "https://onepagelove.com/mainframe",
+        "finalUrl": "https://onepagelove.com/mainframe",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 322,
+        "bytesRead": 90530,
+        "truncated": false,
+        "title": "Mainframe — One Page Website Award",
+        "description": "Dark-schemed One Pager announcing Mainframe that turns agent work into recap videos for your team.",
+        "ogImage": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=628,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/05/opl-screenshot-mainframe-1779887960605-desktop.jpg"
+      },
+      "original": {
+        "requestedUrl": "https://mainframe.app/",
+        "finalUrl": "https://mainframe.app/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 3201,
+        "bytesRead": 20319,
+        "truncated": false,
+        "title": "Mainframe",
+        "description": "",
+        "ogImage": "https://mainframe.app/og.png"
+      }
+    },
+    {
+      "id": "material-expressive",
+      "collection": "Official design system",
+      "source": {
+        "requestedUrl": "https://m3.material.io/",
+        "finalUrl": "https://m3.material.io/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 608,
+        "bytesRead": 62132,
+        "truncated": false,
+        "title": "Material Design",
+        "description": "Material Design 3 - Google's open-source design system, provides comprehensive guidelines, styles, & components to create user-friendly interfaces.",
+        "ogImage": "https://m3.material.io/static/assets/m3-social.jpg"
+      },
+      "original": {
+        "sameAsSource": true
+      }
+    },
+    {
+      "id": "notanotherbill-photo-shop",
+      "collection": "Awwwards",
+      "source": {
+        "requestedUrl": "https://www.awwwards.com/sites/not-another-bill",
+        "finalUrl": "https://www.awwwards.com/sites/not-another-bill",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 2085,
+        "bytesRead": 334366,
+        "truncated": false,
+        "title": "Not-Another-Bill - Awwwards SOTD",
+        "description": "The best gifts in the world in, all in one curated online shopping experience.",
+        "ogImage": "https://assets.awwwards.com/awards/submissions/2018/05/5afc092eb09e8.jpg"
+      },
+      "original": {
+        "requestedUrl": "https://www.notanotherbill.com/",
+        "finalUrl": "https://www.notanotherbill.com/en-kr",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 1779,
+        "bytesRead": 600000,
+        "truncated": true,
+        "title": "Unique and personalised gifts - delivered globally",
+        "description": "We specialise in unique and personalised gifts. From leather accessories, stationery and personalised phone cases to our award winning gift sets and hampers.",
+        "ogImage": "http://www.notanotherbill.com/cdn/shop/files/Logo_Checkout.png?height=628&pad_color=ffffff&v=1670926004&width=1200"
+      }
+    },
+    {
+      "id": "polaris-merchant-utility",
+      "collection": "Official design system",
+      "source": {
+        "requestedUrl": "https://shopify.dev/docs/api/polaris",
+        "finalUrl": "https://shopify.dev/docs/api/polaris",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 1278,
+        "bytesRead": 338017,
+        "truncated": false,
+        "title": "Polaris references",
+        "description": "Explore API references for App Home, Admin, Checkout, Customer accounts, and POS.",
+        "ogImage": "https://shopify.dev/images/social-share-24de3afa0326f705b84a0a98714acc192611e5a21ade3b7c8f2bd12ba7d1457f.jpg"
+      },
+      "original": {
+        "sameAsSource": true
+      }
+    },
+    {
+      "id": "primer-developer-workbench",
+      "collection": "Official design system",
+      "source": {
+        "requestedUrl": "https://primer.style/",
+        "finalUrl": "https://primer.style/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 2990,
+        "bytesRead": 214412,
+        "truncated": false,
+        "title": "Primer",
+        "description": "The Design System for GitHub",
+        "ogImage": ""
+      },
+      "original": {
+        "sameAsSource": true
+      }
+    },
+    {
+      "id": "selfaware-playful-brutal",
+      "collection": "Awwwards",
+      "source": {
+        "requestedUrl": "https://www.awwwards.com/sites/self-aware",
+        "finalUrl": "https://www.awwwards.com/sites/self-aware",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 1434,
+        "bytesRead": 350276,
+        "truncated": false,
+        "title": "Self Aware - Awwwards SOTD",
+        "description": "Five years ago, we started making websites for fun. Today, we&#039;re excited to share our portfolio site that keeps the fun alive.",
+        "ogImage": "https://assets.awwwards.com/awards/submissions/2023/04/64416dfbdcb51301986040.png"
+      },
+      "original": {
+        "requestedUrl": "https://selfaware.studio/",
+        "finalUrl": "https://selfaware.studio/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 1086,
+        "bytesRead": 67983,
+        "truncated": false,
+        "title": "Self Aware | Design and Technology Studio",
+        "description": "Philadelphia-based design and technology studio that brings brands to life on the web.",
+        "ogImage": "https://cdn.sanity.io/images/b5xn7nlg/production/6863748ac323352024f313318fae93d4670bbb9c-2400x1260.png"
+      }
+    },
+    {
+      "id": "spectrum-creative-neutral",
+      "collection": "Official design system",
+      "source": {
+        "requestedUrl": "https://spectrum.adobe.com/",
+        "finalUrl": "https://spectrum.adobe.com/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html",
+        "durationMs": 164,
+        "bytesRead": 13620,
+        "truncated": false,
+        "title": "Spectrum, Adobe’s design system",
+        "description": "Spectrum provides components and tools to help product teams work more efficiently, and to make Adobe’s applications more cohesive.",
+        "ogImage": "https://spectrum.adobe.com/static/landscape.png"
+      },
+      "original": {
+        "sameAsSource": true
+      }
+    },
+    {
+      "id": "voidzero-mono-spectrum",
+      "collection": "Lapa Ninja",
+      "source": {
+        "requestedUrl": "https://www.lapa.ninja/post/voidzero/",
+        "finalUrl": "https://www.lapa.ninja/post/voidzero/",
+        "status": 403,
+        "ok": false,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 155,
+        "bytesRead": 5846,
+        "truncated": false,
+        "title": "Attention Required! | Cloudflare",
+        "description": "",
+        "ogImage": ""
+      },
+      "original": {
+        "requestedUrl": "https://voidzero.dev/",
+        "finalUrl": "https://voidzero.dev/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html",
+        "durationMs": 181,
+        "bytesRead": 63313,
+        "truncated": false,
+        "title": "void(0)",
+        "description": "Our mission is to make the next generation of JavaScript developers more productive than ever before",
+        "ogImage": "https://voidzero.dev/og.jpg"
+      }
+    },
+    {
+      "id": "weave-data-intelligence",
+      "collection": "Land-book",
+      "source": {
+        "requestedUrl": "https://land-book.com/websites/99993-weave-ai-to-measure-engineers-and-agents",
+        "finalUrl": "https://land-book.com/websites/99993-weave-ai-to-measure-engineers-and-agents",
+        "status": 403,
+        "ok": false,
+        "contentType": "text/html; charset=UTF-8",
+        "durationMs": 148,
+        "bytesRead": 5803,
+        "truncated": false,
+        "title": "Just a moment...",
+        "description": "",
+        "ogImage": ""
+      },
+      "original": {
+        "requestedUrl": "https://weaveos.com/",
+        "finalUrl": "https://weaveos.com/",
+        "status": 200,
+        "ok": true,
+        "contentType": "text/html; charset=utf-8",
+        "durationMs": 1221,
+        "bytesRead": 197727,
+        "truncated": false,
+        "title": "Weave - AI to measure engineers and agents",
+        "description": "Weave combines LLMs and domain-specific machine learning to understand engineering work. We understand how much work was done, how good it is, and how AI contributed.",
+        "ogImage": "https://resources.weaveos.com/marketing/weave-social-preview.png"
+      }
+    }
+  ]
+}

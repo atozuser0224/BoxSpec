@@ -1,0 +1,19 @@
+{
+  "scope": "Specification/static fixtures only. No application, renderer, live MCP client or security implementation tested.",
+  "results": [
+    "layout schema and valid contract: PASS",
+    "negative contract: cycle: correctly rejected",
+    "negative contract: missing parent: correctly rejected",
+    "negative contract: breakpoint overlap: correctly rejected",
+    "negative contract: duplicate node: correctly rejected",
+    "negative contract: invalid soft range: correctly rejected",
+    "negative contract: unknown property: correctly rejected",
+    "negative contract: wrong unit: correctly rejected",
+    "hand-authored geometry fixture metrics.desktop.pass.json: PASS",
+    "hand-authored geometry fixture metrics.compact.pass.json: PASS",
+    "hand-authored 320px sidebar negative fixture: correctly rejected",
+    "15 MCP tool input/output schemas and request examples: PASS",
+    "all JSON files parse: PASS"
+  ],
+  "runtimeProductVerified": false
+}
