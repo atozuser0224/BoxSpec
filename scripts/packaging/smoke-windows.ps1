@@ -161,12 +161,12 @@ New-Item -ItemType Directory -Path $typecheckOutput, $buildOutput -Force | Out-N
 $typecheckEntry = Join-Path $resourcesRoot ([string]$verificationManifest.typecheck.entryPoint.relativePath).Replace('/', '\')
 $typecheckArgs = @($typecheckEntry) + @($verificationManifest.typecheck.args | ForEach-Object { ([string]$_).Replace('{outputDir}', $typecheckOutput) })
 $typecheck = Invoke-Captured $unpackedExe $typecheckArgs @{ ELECTRON_RUN_AS_NODE = "1" } 300 $candidateRoot
-if ($typecheck.ExitCode -ne 0) { throw "Packaged trusted typecheck failed ($($typecheck.ExitCode)): $($typecheck.Stderr)" }
+if ($typecheck.ExitCode -ne 0) { throw "Packaged trusted typecheck failed ($($typecheck.ExitCode)): stdout=$($typecheck.Stdout) stderr=$($typecheck.Stderr)" }
 $buildEntry = Join-Path $resourcesRoot ([string]$verificationManifest.build.entryPoint.relativePath).Replace('/', '\')
 $buildArgs = @($buildEntry) + @($verificationManifest.build.args | ForEach-Object { ([string]$_).Replace('{outputDir}', $buildOutput) })
 $verificationBuild = Invoke-Captured $unpackedExe $buildArgs @{ ELECTRON_RUN_AS_NODE = "1" } 300 $candidateRoot
 if ($verificationBuild.ExitCode -ne 0 -or -not (Test-Path -LiteralPath (Join-Path $buildOutput "index.html") -PathType Leaf)) {
-  throw "Packaged trusted Vite build failed ($($verificationBuild.ExitCode)): $($verificationBuild.Stderr)"
+  throw "Packaged trusted Vite build failed ($($verificationBuild.ExitCode)): stdout=$($verificationBuild.Stdout) stderr=$($verificationBuild.Stderr)"
 }
 $browserExe = Join-Path $resourcesRoot ([string]$verificationManifest.browser.relativePath).Replace('/', '\')
 $browserVersion = Invoke-Captured $browserExe @("--version") @{} 60

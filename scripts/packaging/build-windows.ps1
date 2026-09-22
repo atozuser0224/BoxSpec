@@ -2,7 +2,9 @@
 param(
   [string]$OutputRoot,
   [switch]$SkipBuild,
-  [switch]$SkipInstaller
+  [switch]$SkipInstaller,
+  [switch]$UnpackedOnly,
+  [switch]$RefreshVerificationArtifacts
 )
 
 $ErrorActionPreference = "Stop"
@@ -24,8 +26,9 @@ if ($env:OS -ne "Windows_NT") {
 function Invoke-Checked([string]$Label, [string]$Command, [string[]]$Arguments) {
   Write-Host "[$Label] $Command $($Arguments -join ' ')"
   & $Command @Arguments
-  if ($LASTEXITCODE -ne 0) {
-    throw "$Label failed with exit code $LASTEXITCODE."
+  $exitCode = if (Test-Path variable:LASTEXITCODE) { $LASTEXITCODE } else { 0 }
+  if ($exitCode -ne 0) {
+    throw "$Label failed with exit code $exitCode."
   }
 }
 
@@ -235,6 +238,7 @@ UseLongFileName=1
 InsideCompressed=0
 CAB_FixedSize=0
 CAB_ResvCodeSigning=0
+Compress=0
 RebootMode=N
 InstallPrompt=%InstallPrompt%
 DisplayLicense=%DisplayLicense%
@@ -271,10 +275,32 @@ SourceFiles0=$source
   [IO.File]::WriteAllText($sedPath, $sed, [Text.UTF8Encoding]::new($false))
   Invoke-Checked "iexpress" $iexpress @("/N", "/Q", $sedPath)
   $deadline = [DateTimeOffset]::UtcNow.AddMinutes(20)
-  while (-not (Test-Path -LiteralPath $Destination -PathType Leaf) -and [DateTimeOffset]::UtcNow -lt $deadline) {
-    Start-Sleep -Milliseconds 500
+  $ready = $false
+  $stableLength = [long]-1
+  $stableSince = [DateTimeOffset]::MinValue
+  while (-not $ready -and [DateTimeOffset]::UtcNow -lt $deadline) {
+    if (Test-Path -LiteralPath $Destination -PathType Leaf) {
+      try {
+        $probe = [IO.File]::Open($Destination, [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::None)
+        $currentLength = $probe.Length
+        $probe.Dispose()
+        if ($currentLength -gt 0 -and $currentLength -eq $stableLength) {
+          if (([DateTimeOffset]::UtcNow - $stableSince).TotalSeconds -ge 5) { $ready = $true }
+        } else {
+          $stableLength = $currentLength
+          $stableSince = [DateTimeOffset]::UtcNow
+        }
+        if (-not $ready) { Start-Sleep -Milliseconds 500 }
+      } catch [IO.IOException] {
+        $stableLength = [long]-1
+        $stableSince = [DateTimeOffset]::MinValue
+        Start-Sleep -Milliseconds 500
+      }
+    } else {
+      Start-Sleep -Milliseconds 500
+    }
   }
-  if (-not (Test-Path -LiteralPath $Destination -PathType Leaf)) {
+  if (-not $ready) {
     throw "IExpress did not create $Destination within twenty minutes."
   }
 }
@@ -295,6 +321,66 @@ $sourceSnapshot = Get-SourceSnapshot
 $packagerCli = Join-Path $repoRoot "apps\desktop\node_modules\@electron\packager\bin\electron-packager.mjs"
 if (-not (Test-Path -LiteralPath $packagerCli -PathType Leaf)) {
   throw "The pinned @electron/packager CLI is missing from the frozen install."
+}
+
+if ($RefreshVerificationArtifacts) {
+  $packageDir = Join-Path $OutputRoot "unpacked\BoxSpec-win32-x64"
+  $packageExe = Join-Path $packageDir "BoxSpec.exe"
+  $resourcesRoot = Join-Path $packageDir "resources"
+  $verificationManifestPath = Join-Path $resourcesRoot "verification-tools.json"
+  $developmentVerificationRoot = Join-Path $buildRoot "verification-dev"
+  foreach ($requiredPath in @($packageExe, $verificationManifestPath, (Join-Path $developmentVerificationRoot "verification-tools.json"))) {
+    if (-not (Test-Path -LiteralPath $requiredPath -PathType Leaf)) { throw "Refresh input is missing: $requiredPath" }
+  }
+  foreach ($runnerName in @("typecheck-runner.mjs", "vite-build-runner.mjs")) {
+    $runnerSource = Join-Path $repoRoot "packages\verifier\assets\runners\$runnerName"
+    Copy-Item -LiteralPath $runnerSource -Destination (Join-Path $resourcesRoot "verification\runners\$runnerName") -Force
+    Copy-Item -LiteralPath $runnerSource -Destination (Join-Path $developmentVerificationRoot "verification\runners\$runnerName") -Force
+  }
+  foreach ($manifestRoot in @($resourcesRoot, $developmentVerificationRoot)) {
+    $manifestPath = Join-Path $manifestRoot "verification-tools.json"
+    $verificationManifest = Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json
+    $verificationManifest.typecheck.entryPoint = Get-PackagedAsset $manifestRoot (Join-Path $manifestRoot "verification\runners\typecheck-runner.mjs")
+    $verificationManifest.build.entryPoint = Get-PackagedAsset $manifestRoot (Join-Path $manifestRoot "verification\runners\vite-build-runner.mjs")
+    Write-Utf8NoBomJson $verificationManifest $manifestPath 8
+  }
+  Assert-SourceSnapshot $sourceSnapshot
+
+  $portableName = "BoxSpec-$version-win-x64-portable.zip"
+  $portablePath = Join-Path $OutputRoot $portableName
+  New-DeterministicZip $packageDir $portablePath
+  $portableHash = Get-Sha256Hex $portablePath
+  $release = [ordered]@{ schemaVersion = 1; product = "BoxSpec"; version = $version; platform = "win32"; arch = "x64"; portableSha256 = $portableHash; signed = $false }
+  $installerPath = Join-Path $OutputRoot "BoxSpec-$version-win-x64-setup-unsigned.exe"
+  if (Test-Path -LiteralPath $installerPath) { Remove-Item -LiteralPath $installerPath -Force }
+  $payloadRoot = Join-Path $OutputRoot "stage\installer"
+  if (Test-Path -LiteralPath $payloadRoot) { Remove-BuildTree $payloadRoot }
+  New-Item -ItemType Directory -Path $payloadRoot -Force | Out-Null
+  Copy-Item -LiteralPath (Join-Path $repoRoot "apps\desktop\packaging\install.ps1") -Destination (Join-Path $payloadRoot "install.ps1")
+  Copy-Item -LiteralPath $portablePath -Destination (Join-Path $payloadRoot "boxspec-portable.zip")
+  [IO.File]::WriteAllText((Join-Path $payloadRoot "portable.sha256"), "$portableHash`r`n", [Text.ASCIIEncoding]::new())
+  Write-Utf8NoBomJson $release (Join-Path $payloadRoot "release.json") 4
+  New-IExpressInstaller $payloadRoot $installerPath
+
+  $artifactManifestPath = Join-Path $OutputRoot "artifact-manifest.json"
+  $artifactManifest = Get-Content -LiteralPath $artifactManifestPath -Raw | ConvertFrom-Json
+  $artifactManifest.createdAt = [DateTimeOffset]::UtcNow.ToString("O")
+  $artifactManifest.verificationTools.manifestSha256 = Get-Sha256Hex $verificationManifestPath
+  $artifactManifest.sha256.portable = $portableHash
+  $artifactManifest.sha256.installer = Get-Sha256Hex $installerPath
+  $artifactManifest.sha256.verificationManifest = Get-Sha256Hex $verificationManifestPath
+  Write-Utf8NoBomJson $artifactManifest $artifactManifestPath 8
+  $hashLines = @(
+    "$($artifactManifest.sha256.executable)  BoxSpec.exe",
+    "$($artifactManifest.sha256.asar)  app.asar",
+    "$($artifactManifest.sha256.nativeSafeFs)  boxspec-safe-fs.exe",
+    "$($artifactManifest.sha256.verificationManifest)  verification-tools.json",
+    "$($artifactManifest.sha256.portable)  $portableName",
+    "$($artifactManifest.sha256.installer)  $([IO.Path]::GetFileName($installerPath))"
+  )
+  [IO.File]::WriteAllLines((Join-Path $OutputRoot "SHA256SUMS"), $hashLines, [Text.ASCIIEncoding]::new())
+  Write-Host "BoxSpec verification resources and artifacts refreshed in $OutputRoot"
+  return
 }
 
 if (-not $SkipBuild) {
@@ -548,6 +634,11 @@ $developmentManifest = $verificationToolsManifest | ConvertTo-Json -Depth 8 | Co
 $developmentManifest.applicationExecutable.sha256 = Get-Sha256Hex $developmentElectron
 $developmentManifest.applicationExecutable.sizeBytes = (Get-Item -LiteralPath $developmentElectron).Length
 Write-Utf8NoBomJson $developmentManifest (Join-Path $developmentVerificationRoot "verification-tools.json") 8
+
+if ($UnpackedOnly) {
+  Write-Host "BoxSpec unpacked Windows candidate created at $packageDir"
+  return
+}
 
 $portableName = "BoxSpec-$version-win-x64-portable.zip"
 $portablePath = Join-Path $OutputRoot $portableName
