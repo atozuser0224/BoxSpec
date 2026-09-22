@@ -1,4 +1,5 @@
 import { app, BrowserWindow, dialog, ipcMain, session, shell } from "electron";
+import { spawn } from "node:child_process";
 import { dirname, join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { NATIVE_SAFE_FS_MANIFEST } from "@boxspec/shared/native-tools";
@@ -279,8 +280,28 @@ function resolveMcpLauncher(): { path: string; argsPrefix: string[] } | undefine
 }
 
 async function startPackagedMcp(): Promise<void> {
-  const entry = pathToFileURL(join(process.resourcesPath, "mcp", "dist", "index.js")).href;
-  await import(entry);
+  const entry = join(process.resourcesPath, "mcp", "dist", "index.js");
+  // Windows Electron GUI mode does not expose a usable stdin stream to the
+  // transport. The bundled executable's Node mode inherits the original pipes.
+  const child = spawn(process.execPath, [entry, ...process.argv.slice(2)], {
+    env: { ...process.env, ELECTRON_RUN_AS_NODE: "1" },
+    stdio: "inherit",
+    windowsHide: true,
+  });
+  const stop = (): void => { if (child.exitCode === null) child.kill(); };
+  app.once("before-quit", stop);
+  process.once("SIGINT", stop);
+  process.once("SIGTERM", stop);
+  await new Promise<void>((resolve, reject) => {
+    child.once("error", reject);
+    child.once("exit", (code) => {
+      app.removeListener("before-quit", stop);
+      process.removeListener("SIGINT", stop);
+      process.removeListener("SIGTERM", stop);
+      resolve();
+      app.exit(code ?? 1);
+    });
+  });
 }
 
 const packagedMcpMode = app.isPackaged && process.argv[1] === "--mcp-stdio";
